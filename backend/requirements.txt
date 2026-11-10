@@ -1,0 +1,20 @@
+# --- Add/confirm these in your existing requirements.txt ---
+# (google-search-results is the pip package that provides `from serpapi import GoogleSearch`)
+
+beautifulsoup4
+flask
+flask-cors
+flask-sqlalchemy
+google-search-results
+requests
+urllib3
+python-dotenv
+lxml
+rapidfuzz
+geopy
+tldextract
+
+# Notes:
+# - `playwright` is no longer required by buyer_search_service.py (it now
+#   uses requests + BeautifulSoup only, per the new spec). Remove it if
+#   nothing else in the project depends on it.
